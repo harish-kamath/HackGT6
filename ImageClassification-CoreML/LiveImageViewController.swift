@@ -9,8 +9,31 @@
 import UIKit
 import Vision
 
+func orderCreate(_ orderName:String){
+    let url = URL(string: "https://gateway-staging.ncrcloud.com/order/orders")!
+    var request = URLRequest(url: url)
+    request.setValue("CorrID", forHTTPHeaderField: "nep-correlation-id")
+    request.setValue("hack-harishkamath", forHTTPHeaderField: "nep-organization")
+    request.setValue("8a008d406ddb112d016e0bd3c63f0045", forHTTPHeaderField: "nep-application-key")
+    request.setValue("Basic \("acct:root@hack_harishkamath:0XDe4F!9+>".toBase64())", forHTTPHeaderField: "Authorization")
+    request.httpBody = Data(base64Encoded: orderName)
+    let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        if let error = error {
+            print("error: \(error)")
+        } else {
+            if let response = response as? HTTPURLResponse {
+                print("statusCode: \(response.statusCode)")
+            }
+            if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                print("data: \(dataString)")
+            }
+        }
+    }
+    task.resume()
+}
+
 class LiveImageViewController: UIViewController {
-    
+    var label = ""
     // MARK: - UI Properties
     @IBOutlet weak var videoPreview: UIView!
     @IBOutlet weak var labelLabel: UILabel!
@@ -84,7 +107,7 @@ class LiveImageViewController: UIViewController {
         videoCapture = VideoCapture()
         videoCapture.delegate = self
         videoCapture.fps = 50
-        videoCapture.setUp(sessionPreset: .vga640x480) { success in
+        videoCapture.setUp(sessionPreset: .high) { success in
             
             if success {
                 // UI에 비디오 미리보기 뷰 넣기
@@ -178,8 +201,20 @@ extension LiveImageViewController {
     
     func showResults(objectLabel: String, confidence: VNConfidence) {
         DispatchQueue.main.sync {
-            self.labelLabel.text = objectLabel
-            self.confidenceLabel.text = "\(round(confidence * 100)) %"
+            //self.labelLabel.text = objectLabel
+            //self.confidenceLabel.text = "\(round(confidence * 100)) %"
+            if(confidence > 0.3){
+                print(objectLabel)
+                if objectLabel.contains("computer") {
+                    let alert = UIAlertController(title: "Checked Out!", message: "You have checked this item out: \(label)", preferredStyle: UIAlertController.Style.alert)
+
+                    // add an action (button)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+                    // show the alert
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
         }
     }
 }
@@ -188,8 +223,8 @@ extension LiveImageViewController {
 extension LiveImageViewController: 📏Delegate {
     func updateMeasure(inferenceTime: Double, executionTime: Double, fps: Int) {
         //print(executionTime, fps)
-        self.inferenceLabel.text = "inference: \(Int(inferenceTime*1000.0)) mm"
-        self.etimeLabel.text = "execution: \(Int(executionTime*1000.0)) mm"
-        self.fpsLabel.text = "fps: \(fps)"
+        //self.inferenceLabel.text = "inference: \(Int(inferenceTime*1000.0)) mm"
+        //self.etimeLabel.text = "execution: \(Int(executionTime*1000.0)) mm"
+        //self.fpsLabel.text = "fps: \(fps)"
     }
 }

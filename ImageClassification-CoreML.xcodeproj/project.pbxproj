@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493EFF278E914976E2167AA6 /* Pods_ImageClassification_CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDFFC8F8EB8CEA93305AB05 /* Pods_ImageClassification_CoreML.framework */; };
 		550AE90F221B843A0021C834 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550AE90E221B843A0021C834 /* Measure.swift */; };
 		556D1CE620BBA9FA0070537C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D1CE520BBA9FA0070537C /* AppDelegate.swift */; };
 		556D1CE820BBA9FA0070537C /* LiveImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D1CE720BBA9FA0070537C /* LiveImageViewController.swift */; };
@@ -27,6 +28,13 @@
 		71B8320522E2A5E000207D05 /* Resnet50Headless.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 71B831FE22E2A5D800207D05 /* Resnet50Headless.mlmodel */; };
 		71B8320622E2A5E000207D05 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 71B831FF22E2A5E000207D05 /* Resnet50.mlmodel */; };
 		71B8320722E2A5E000207D05 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 71B8320022E2A5E000207D05 /* SqueezeNet.mlmodel */; };
+		A78314DC2365925900903451 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78314D92365925900903451 /* CustomCell.swift */; };
+		A78314DD2365925900903451 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78314DA2365925900903451 /* CustomCell.xib */; };
+		A78314DE2365925900903451 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78314DB2365925900903451 /* Countries.swift */; };
+		A79C257F236592EF00355147 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C257E236592EF00355147 /* ListViewController.swift */; };
+		A79C258123659AB200355147 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C258023659AB200355147 /* MapViewController.swift */; };
+		A79C25832365BAF800355147 /* checkout.png in Resources */ = {isa = PBXBuildFile; fileRef = A79C25822365BAF800355147 /* checkout.png */; };
+		A79C25852365BBCA00355147 /* checkout copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A79C25842365BBCA00355147 /* checkout copy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EEC8E3142E4AF96A2CF909D /* Pods-ImageClassification-CoreML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageClassification-CoreML.release.xcconfig"; path = "Target Support Files/Pods-ImageClassification-CoreML/Pods-ImageClassification-CoreML.release.xcconfig"; sourceTree = "<group>"; };
+		3BDFFC8F8EB8CEA93305AB05 /* Pods_ImageClassification_CoreML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageClassification_CoreML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		550AE90E221B843A0021C834 /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
 		556D1CE220BBA9FA0070537C /* ImageClassification-CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ImageClassification-CoreML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556D1CE520BBA9FA0070537C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +74,14 @@
 		71B831FE22E2A5D800207D05 /* Resnet50Headless.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50Headless.mlmodel; sourceTree = "<group>"; };
 		71B831FF22E2A5E000207D05 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		71B8320022E2A5E000207D05 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		77C069BA6CAC993554784A89 /* Pods-ImageClassification-CoreML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageClassification-CoreML.debug.xcconfig"; path = "Target Support Files/Pods-ImageClassification-CoreML/Pods-ImageClassification-CoreML.debug.xcconfig"; sourceTree = "<group>"; };
+		A78314D92365925900903451 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		A78314DA2365925900903451 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		A78314DB2365925900903451 /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		A79C257E236592EF00355147 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		A79C258023659AB200355147 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A79C25822365BAF800355147 /* checkout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkout.png; sourceTree = "<group>"; };
+		A79C25842365BBCA00355147 /* checkout copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkout copy.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493EFF278E914976E2167AA6 /* Pods_ImageClassification_CoreML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,9 +106,13 @@
 		556D1CD920BBA9FA0070537C = {
 			isa = PBXGroup;
 			children = (
+				A79C25822365BAF800355147 /* checkout.png */,
+				A79C25842365BBCA00355147 /* checkout copy.png */,
 				556D1CE420BBA9FA0070537C /* ImageClassification-CoreML */,
 				556D1CF920BBA9FC0070537C /* ImageClassification-CoreMLUITests */,
 				556D1CE320BBA9FA0070537C /* Products */,
+				7963EEBF69C69CB2F630C4BC /* Pods */,
+				C8194839E4CFAEC11BF33739 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +128,9 @@
 		556D1CE420BBA9FA0070537C /* ImageClassification-CoreML */ = {
 			isa = PBXGroup;
 			children = (
+				A78314DB2365925900903451 /* Countries.swift */,
+				A78314D92365925900903451 /* CustomCell.swift */,
+				A78314DA2365925900903451 /* CustomCell.xib */,
 				556D1CE520BBA9FA0070537C /* AppDelegate.swift */,
 				556D1CE920BBA9FA0070537C /* Main.storyboard */,
 				556D1CE720BBA9FA0070537C /* LiveImageViewController.swift */,
@@ -114,6 +140,8 @@
 				556D1CEC20BBA9FC0070537C /* Assets.xcassets */,
 				556D1CEE20BBA9FC0070537C /* LaunchScreen.storyboard */,
 				556D1CF120BBA9FC0070537C /* Info.plist */,
+				A79C257E236592EF00355147 /* ListViewController.swift */,
+				A79C258023659AB200355147 /* MapViewController.swift */,
 			);
 			path = "ImageClassification-CoreML";
 			sourceTree = "<group>";
@@ -178,6 +206,23 @@
 			path = MobileNet;
 			sourceTree = "<group>";
 		};
+		7963EEBF69C69CB2F630C4BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77C069BA6CAC993554784A89 /* Pods-ImageClassification-CoreML.debug.xcconfig */,
+				0EEC8E3142E4AF96A2CF909D /* Pods-ImageClassification-CoreML.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8194839E4CFAEC11BF33739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BDFFC8F8EB8CEA93305AB05 /* Pods_ImageClassification_CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 556D1CFF20BBA9FC0070537C /* Build configuration list for PBXNativeTarget "ImageClassification-CoreML" */;
 			buildPhases = (
+				A475A3C480A8C95DD056CAB9 /* [CP] Check Pods Manifest.lock */,
 				556D1CDE20BBA9FA0070537C /* Sources */,
 				556D1CDF20BBA9FA0070537C /* Frameworks */,
 				556D1CE020BBA9FA0070537C /* Resources */,
+				BA8BEFE380AA7D218F5AA3A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,8 +306,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79C25832365BAF800355147 /* checkout.png in Resources */,
 				556D1CF020BBA9FC0070537C /* LaunchScreen.storyboard in Resources */,
 				556D1CED20BBA9FC0070537C /* Assets.xcassets in Resources */,
+				A79C25852365BBCA00355147 /* checkout copy.png in Resources */,
+				A78314DD2365925900903451 /* CustomCell.xib in Resources */,
 				556D1CEB20BBA9FA0070537C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,17 +324,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A475A3C480A8C95DD056CAB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageClassification-CoreML-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8BEFE380AA7D218F5AA3A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageClassification-CoreML/Pods-ImageClassification-CoreML-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageClassification-CoreML/Pods-ImageClassification-CoreML-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageClassification-CoreML/Pods-ImageClassification-CoreML-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		556D1CDE20BBA9FA0070537C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78314DE2365925900903451 /* Countries.swift in Sources */,
 				71B831F622E2A20200207D05 /* MobileNetV2.mlmodel in Sources */,
 				55DF3E7321972FBF0080252C /* MobileNet.mlmodel in Sources */,
+				A79C258123659AB200355147 /* MapViewController.swift in Sources */,
 				71B831F522E2A20200207D05 /* MobileNetV2Int8LUT.mlmodel in Sources */,
 				71B8320722E2A5E000207D05 /* SqueezeNet.mlmodel in Sources */,
+				A78314DC2365925900903451 /* CustomCell.swift in Sources */,
 				71B831F722E2A20200207D05 /* MobileNetV2FP16.mlmodel in Sources */,
 				556D1D0820BBABCC0070537C /* VideoCapture.swift in Sources */,
+				A79C257F236592EF00355147 /* ListViewController.swift in Sources */,
 				71B8320422E2A5E000207D05 /* SqueezeNetFP16.mlmodel in Sources */,
 				550AE90F221B843A0021C834 /* Measure.swift in Sources */,
 				71B8320522E2A5E000207D05 /* Resnet50Headless.mlmodel in Sources */,
@@ -452,17 +548,18 @@
 		};
 		556D1D0020BBA9FC0070537C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77C069BA6CAC993554784A89 /* Pods-ImageClassification-CoreML.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
+				DEVELOPMENT_TEAM = 57CPG488EU;
 				INFOPLIST_FILE = "ImageClassification-CoreML/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.canapio.MobileNetApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hkamath.MobileNetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,17 +568,18 @@
 		};
 		556D1D0120BBA9FC0070537C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EEC8E3142E4AF96A2CF909D /* Pods-ImageClassification-CoreML.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
+				DEVELOPMENT_TEAM = 57CPG488EU;
 				INFOPLIST_FILE = "ImageClassification-CoreML/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.canapio.MobileNetApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hkamath.MobileNetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
